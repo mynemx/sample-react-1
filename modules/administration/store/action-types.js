@@ -1,0 +1,27 @@
+export const USER_LIST = "USER_LIST";
+export const USER_ADD = "USER_ADD";
+export const USER_UPDATE = "USER_UPDATE";
+export const USER_REMOVE = "USER_REMOVE";
+export const PRODUCT_LIST = "PRODUCT_LIST";
+export const PRODUCT_ADD = "PRODUCT_ADD";
+export const PRODUCT_UPDATE = "PRODUCT_UPDATE";
+export const PRODUCT_REMOVE = "PRODUCT_REMOVE";
+export const CATEGORY_LIST = "CATEGORY_LIST";
+export const CATEGORY_ADD = "CATEGORY_ADD";
+export const CATEGORY_UPDATE = "CATEGORY_UPDATE";
+export const CATEGORY_REMOVE = "CATEGORY_REMOVE";
+
+export default {
+    USER_LIST,
+    USER_ADD,
+    USER_UPDATE,
+    USER_REMOVE,
+    PRODUCT_LIST,
+    PRODUCT_ADD,
+    PRODUCT_UPDATE,
+    PRODUCT_REMOVE,
+    CATEGORY_LIST,
+    CATEGORY_ADD,
+    CATEGORY_UPDATE,
+    CATEGORY_REMOVE
+};
