@@ -16,7 +16,7 @@ const propTypes = {
     onSubmit: PropTypes.func.isRequired
 };
 
-const Form = ({ order, orderStatuses, users, errors, onChange, onSubmit }) => {
+const Form = ({ order, orderStatuses, users, sourceList, errors, onChange, onSubmit }) => {
     const [items, setItems] = useState(order.items);
     const [totalPrice, setPrice] = useState(order.totalPrice);
 
@@ -240,6 +240,21 @@ const Form = ({ order, orderStatuses, users, errors, onChange, onSubmit }) => {
                             name="deliveryAddress"
                             value={order.deliveryAddress || ""}
                             errors={errors}
+                            onChange={handleChange}
+                        />
+                    </div>
+                </div>
+
+                <div className="form-row">
+                    <div className="form-group floating-label col">
+                        <FloatingDropdown
+                            label="Source"
+                            name="source"
+                            value={order.source}
+                            list={sourceList}
+                            errors={errors}
+                            field="name"
+                            displayField="name"
                             onChange={handleChange}
                         />
                     </div>

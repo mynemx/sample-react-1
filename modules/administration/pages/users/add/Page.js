@@ -31,7 +31,7 @@ class Page extends PureComponent {
             gender: "required",
             roleIds: "",
             password: "required|min:6|max:25",
-            passwordConfirmation: "required|confirmed:password"
+            passwordConfirmation: "required"
         });
 
         const user = this.props.user.toJson();

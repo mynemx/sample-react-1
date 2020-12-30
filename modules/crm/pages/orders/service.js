@@ -112,9 +112,10 @@ export function orderRemoveRequest(id) {
 
 export function orderListRequest({
     pageNumber = 1,
-    user = [],
-    title = "",
-    listType = "",
+    sources = [],
+    name = "",
+    order_date = "",
+    sales_rep_id = "",
     limits = 50,
     loader = true,
     url = "crm/orders"
@@ -122,13 +123,13 @@ export function orderListRequest({
     return dispatch => {
         dispatch(authPageLoading(loader));
 
-        const userquery = user.reduce((qry, val) => {
-            return qry + `&user_id[]=${val}`;
+        const sourcequery = sources.reduce((qry, val) => {
+            return qry + `&source[]=${val}`;
         }, "");
         url =
             url +
-            `?page=${pageNumber}&title=${title}&listType=${listType}${userquery}&limits=${limits}`;
-
+            `?page=${pageNumber}&order_no=${name}&order_date=${order_date}&sales_rep_id=${sales_rep_id}${sourcequery}&limits=${limits}`;
+            
         Http.get(url)
             .then(res => {
                 dispatch(

@@ -1,0 +1,9 @@
+export const USER_CALL_SUMMARY = "USER_CALL_SUMMARY";
+export const USER_ORDER_SUMMARY = "USER_ORDER_SUMMARY";
+export const DASHBOARD = "DASHBOARD";
+
+export default {
+    DASHBOARD,
+    USER_CALL_SUMMARY,
+    USER_ORDER_SUMMARY
+};

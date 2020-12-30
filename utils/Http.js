@@ -2,13 +2,18 @@
 import axios from "axios";
 import store from "../store/index";
 import { authLogout } from "../modules/auth/store/actions";
+
+// if (process.env.NODE_ENV !== "production") {
+
 const rootUrl = document.querySelector("body").getAttribute("data-root-url");
+
 // const API_URL =
 //     process.env.NODE_ENV === "test"
 //         ? process.env.BASE_URL || `http://localhost:${process.env.PORT}/api/`
 //         : `/api/`;
 
-const API_URL = `${rootUrl}/api`;
+const API_URL = `${rootUrl}api`;
+
 // const API_URL = `wemy.techmadeeazy.com/wemy/public/api`;
 
 axios.defaults.baseURL = API_URL;

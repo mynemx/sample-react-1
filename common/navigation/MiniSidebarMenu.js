@@ -12,6 +12,8 @@ import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import AppsIcon from "@material-ui/icons/Apps";
 import CloseIcon from "@material-ui/icons/Close";
+import HelpIcon from "@material-ui/icons/Help";
+
 const $ = require("jquery");
 
 export default class MiniSideBarMenu extends PureComponent {
@@ -90,6 +92,18 @@ export default class MiniSideBarMenu extends PureComponent {
                             title="Contact Center"
                         >
                             <DialerSipIcon />
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/app/help"
+                            activeClassName="active"
+                            className="nav-link"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="Agent Help"
+                        >
+                            <HelpIcon />
                         </NavLink>
                     </li>
                     <li>

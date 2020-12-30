@@ -22,12 +22,13 @@ const OrderRow = ({ index, order, handleRemove }) => {
             <td>{order.clientName}</td>
             <td>{order.contactNumber}</td>
             <td>{order.salesRepName}</td>
+            <td>{order.source}</td>
             <td>
                 {order.orderedDate && order.orderedDate.format("MMM, DD YYYY")}
             </td>
             <td>{order.statusName}</td>
             <td>
-                {order.currencyCode + " " + order.totalPrice.toLocaleString()}
+                {order.currencyCode + " " + order.subTotal.toLocaleString()}
             </td>
             <td>
                 <div className="btn-group btn-sm action-btn">

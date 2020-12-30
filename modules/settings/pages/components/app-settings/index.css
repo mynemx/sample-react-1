@@ -1,0 +1,27 @@
+.flex-container{
+    display: flex;
+
+}
+.flex-item, .flex-item a{
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+    text-align: center;
+}
+
+.flex-item a span.icon{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #ededed;
+}
+
+.flex-item a span.text{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.flex-item{
+    margin:0px 15px 30px 15px;
+}

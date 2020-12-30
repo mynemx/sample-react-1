@@ -27,6 +27,7 @@ class Page extends PureComponent {
             salesRepId: "required",
             category: "required",
             orderedDate: "required",
+            source: "required",
             contactId: "",
             companyId: "",
             orderStatusId: "",
@@ -39,11 +40,17 @@ class Page extends PureComponent {
 
         const order = new Order({});
         const { users, orderStatuses } = this.props;
-
+        const sourceList = [
+            {name: "Cold customer"},
+            {name: "Existing customer "},
+            {name: "Inbound cold customer "},
+            {name: "Inbound existing customer"},
+        ]
         this.state = {
             order: order.toJson(),
             users,
             orderStatuses,
+            sourceList,
             err: "init",
             errors: this.validator.errors
         };

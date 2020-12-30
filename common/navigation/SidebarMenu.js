@@ -12,6 +12,7 @@ import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import AppsIcon from "@material-ui/icons/Apps";
 import CloseIcon from "@material-ui/icons/Close";
+import HelpIcon from "@material-ui/icons/Help";
 
 export default class SideBarMenu extends PureComponent {
     static propTypes = {
@@ -69,6 +70,18 @@ export default class SideBarMenu extends PureComponent {
                             className="nav-link"
                         >
                             <DialerSipIcon /> Contact Center
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/app/help"
+                            activeClassName="active"
+                            className="nav-link"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="Contact Center"
+                        >
+                            <DialerSipIcon /> Help
                         </NavLink>
                     </li>
                     <li>

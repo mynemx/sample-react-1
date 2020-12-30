@@ -69,7 +69,7 @@
 
 .sidebar-menu ul {
     list-style: none;
-    margin: 0px;
+    margin: 0px 12px;
     padding: 5px;
 }
 
@@ -79,7 +79,8 @@
     font-weight: 600;
     font-size: 14px;
     margin: 3px 2px;
-    line-height: 19px;
+    line-height: 20px;
+    margin: 0px 0px 12px 0px;
     /* border: #154E56 1px solid; */
     color: #8d3a26;
 }
@@ -105,20 +106,13 @@
 }
 
 .sidebar-menu ul li a:hover {
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
-    color: #cf644a;
+    background-color: #f4f4f4;
 }
 
 .sidebar-menu ul li a.active {
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
     color: #cf644a;
     background-color: #f4f4f4;
     border-radius: 3px;
-    border-bottom: #8d3a26 2px solid;
 }
 
 .sidebar-menu ul li a .MuiSvgIcon-root {
@@ -127,19 +121,21 @@
 
 .mini-sidebar-menu ul {
     list-style: none;
-    margin: 0px;
+    margin: 0px 12px;
     padding: 2px;
 }
 
 .mini-sidebar-menu ul li {
-    height: 35px;
+    height: 40px;
+    width: 40px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    margin: 3px 2px;
-    line-height: 19px;
+    margin: 0 0 12px 0;
+    /* line-height: 19px; */
     /* border: #154E56 1px solid; */
     color: #333;
+    padding: 0;
 }
 
 .mini-sidebar-menu ul li.active::before,
@@ -158,29 +154,25 @@
     min-height: 35px;
     font-weight: 600;
     font-size: 20px;
-    line-height: 19px;
-    color: #333;
+    line-height: 20px;
+    color: #939292;
+    padding: 8px;
 }
 
 .mini-sidebar-menu ul li a:hover {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 22px;
     color: #000;
+    background-color: #f4f4f4;
+
 }
 
 .mini-sidebar-menu ul li a.active {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 22px;
     color: #000;
     background-color: #dfdfdf;
     border-radius: 3px;
-    border-bottom: #333 2px solid;
 }
 
 .mini-sidebar-menu ul li a .MuiSvgIcon-root {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .navigation li a .MuiSvgIcon-root {
